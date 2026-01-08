@@ -12,7 +12,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import { LANGUAGES } from '../../data/languages/registry';
 
 export default function LearnPage() {
-    const { language, selectLanguage, isLoaded: isLangLoaded } = useLanguage();
+    const { language, selectLanguage, clearLanguage, isLoaded: isLangLoaded } = useLanguage();
     const router = useRouter();
 
     // Data State
@@ -474,7 +474,14 @@ export default function LearnPage() {
     };
 
 
-    if (!isLoaded || !curriculum || !language) return <div className="p-8 text-center text-gray-500">Loading {language?.name || 'Content'}...</div>;
+    if (!isLoaded || !curriculum || !language) return (
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
+            <div className="w-24 h-24 mb-6 animate-pulse">
+                <img src="/icons/icon.png" alt="Loading..." className="w-full h-full object-contain" />
+            </div>
+            <p className="text-gray-400">Loading {language?.name || 'Patterns'}...</p>
+        </div>
+    );
 
     const currentLevelData = curriculum[`level_${userLevel}`];
 
@@ -485,7 +492,7 @@ export default function LearnPage() {
             {/* Header */}
             <header className="w-full max-w-4xl flex flex-col gap-4 mb-8 relative z-20">
                 <div className="flex justify-between items-center">
-                    <Link href="/" className="text-gray-600 hover:text-gray-900 font-medium flex items-center gap-2">← Home</Link>
+                    <button onClick={() => { clearLanguage(); router.push('/'); }} className="text-gray-600 hover:text-gray-900 font-medium flex items-center gap-2">← Home</button>
 
                     {/* Language Switcher */}
                     <div className="relative">

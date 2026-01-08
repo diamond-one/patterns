@@ -33,10 +33,10 @@ export default function HomePage() {
           <button
             key={lang.id}
             onClick={() => handleSelect(lang.id)}
-            className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl hover:bg-white/20 hover:scale-105 transition-all flex flex-col items-center gap-4 group"
+            className="bg-white/20 hover:bg-white/30 border border-white/40 p-8 rounded-2xl hover:scale-105 transition-all flex flex-col items-center gap-4 group shadow-xl"
           >
-            <span className="text-6xl group-hover:scale-110 transition-transform duration-300">{lang.flag}</span>
-            <span className="text-2xl font-bold">{lang.name}</span>
+            <span className="text-7xl drop-shadow-md filter group-hover:scale-110 transition-transform duration-300">{lang.flag}</span>
+            <span className="text-3xl font-bold text-white drop-shadow-sm">{lang.name}</span>
           </button>
         ))}
       </div>

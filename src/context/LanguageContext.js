@@ -26,8 +26,13 @@ export function LanguageProvider({ children }) {
         }
     };
 
+    const clearLanguage = () => {
+        setLanguage(null);
+        localStorage.removeItem('patterns-active-lang');
+    };
+
     return (
-        <LanguageContext.Provider value={{ language, selectLanguage, isLoaded }}>
+        <LanguageContext.Provider value={{ language, selectLanguage, clearLanguage, isLoaded }}>
             {children}
         </LanguageContext.Provider>
     );
