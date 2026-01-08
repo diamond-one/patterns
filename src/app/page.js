@@ -35,7 +35,9 @@ export default function HomePage() {
             onClick={() => handleSelect(lang.id)}
             className="bg-white/20 hover:bg-white/30 border border-white/40 p-8 rounded-2xl hover:scale-105 transition-all flex flex-col items-center gap-4 group shadow-xl"
           >
-            <span className="text-7xl drop-shadow-md filter group-hover:scale-110 transition-transform duration-300">{lang.flag}</span>
+            <div className="w-32 h-32 group-hover:scale-110 transition-transform duration-300">
+              <img src={lang.flag} alt={lang.name} className="w-full h-full object-contain drop-shadow-md" />
+            </div>
             <span className="text-3xl font-bold text-white drop-shadow-sm">{lang.name}</span>
           </button>
         ))}

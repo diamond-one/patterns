@@ -492,7 +492,7 @@ export default function LearnPage() {
             {/* Header */}
             <header className="w-full max-w-4xl flex flex-col gap-4 mb-8 relative z-20">
                 <div className="flex justify-between items-center">
-                    <button onClick={() => { clearLanguage(); router.push('/'); }} className="text-gray-600 hover:text-gray-900 font-medium flex items-center gap-2">← Home</button>
+                    <button onClick={() => { clearLanguage(); window.location.href = '/'; }} className="text-gray-600 hover:text-gray-900 font-medium flex items-center gap-2">← Home</button>
 
                     {/* Language Switcher */}
                     <div className="relative">
@@ -500,7 +500,7 @@ export default function LearnPage() {
                             onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
                             className="bg-white border border-gray-200 px-3 py-1 rounded-full flex items-center gap-2 text-sm font-bold text-gray-700 hover:bg-gray-50"
                         >
-                            <span>{language.flag}</span>
+                            <img src={language.flag} alt="flag" className="w-6 h-6 object-contain" />
                             <span>{language.name}</span>
                             <span>▼</span>
                         </button>
@@ -512,7 +512,7 @@ export default function LearnPage() {
                                         onClick={() => handleLanguageSwitch(lang.id)}
                                         className={`px-4 py-3 text-left hover:bg-gray-50 flex items-center gap-2 ${language.id === lang.id ? 'bg-blue-50 text-brand-blue' : 'text-gray-700'}`}
                                     >
-                                        <span>{lang.flag}</span>
+                                        <img src={lang.flag} alt="flag" className="w-6 h-6 object-contain" />
                                         <span>{lang.name}</span>
                                     </button>
                                 ))}

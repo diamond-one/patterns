@@ -2,7 +2,7 @@ export const LANGUAGES = {
     cs: {
         id: 'cs',
         name: 'Czech',
-        flag: '🇨🇿',
+        flag: '/icons/flags/cs.png',
         voice: 'cs-CZ',
         welcome_title: 'Vítejte!',
         welcome_intro: "Let's unlock your first Czech words.",
@@ -10,7 +10,7 @@ export const LANGUAGES = {
     ja: {
         id: 'ja',
         name: 'Japanese',
-        flag: '🇯🇵',
+        flag: '/icons/flags/ja.png',
         voice: 'ja-JP',
         welcome_title: 'ようこそ!',
         welcome_intro: "Let's unlock your first Japanese words.",
@@ -18,7 +18,7 @@ export const LANGUAGES = {
     tr: {
         id: 'tr',
         name: 'Turkish',
-        flag: '🇹🇷',
+        flag: '/icons/flags/tr.png',
         voice: 'tr-TR',
         welcome_title: 'Hoş geldiniz!',
         welcome_intro: "Let's unlock your first Turkish words.",
