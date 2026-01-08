@@ -1,0 +1,1533 @@
+{
+    "level_1": {
+        "id": "level_1",
+        "title": "Survival Interaction",
+        "goal": "Greet politely, introduce yourself, order items, and ask for help.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_1a",
+                "type": "frame",
+                "template": "[NOUN] lütfen",
+                "description": "Polite request / Ordering",
+                "slot_definitions": {
+                    "NOUN": "Object you want"
+                },
+                "example_phrase_ids": [
+                    "phrase_1a_1",
+                    "phrase_1a_2",
+                    "phrase_1a_3"
+                ]
+            },
+            {
+                "id": "frame_1b",
+                "type": "frame",
+                "template": "Ben [NAME]",
+                "description": "Introducing yourself",
+                "slot_definitions": {
+                    "NAME": "Your name"
+                },
+                "example_phrase_ids": [
+                    "phrase_1b_1",
+                    "phrase_1b_2"
+                ]
+            },
+            {
+                "id": "frame_1c",
+                "type": "frame",
+                "template": "[PLACE/THING] nerede?",
+                "description": "Asking for location",
+                "slot_definitions": {
+                    "PLACE/THING": "The place or object"
+                },
+                "example_phrase_ids": [
+                    "phrase_1c_1",
+                    "phrase_1c_2",
+                    "phrase_1c_3"
+                ]
+            },
+            {
+                "id": "frame_1d",
+                "type": "frame",
+                "template": "Biraz [LANGUAGE] konuşuyorum",
+                "description": "Language Skills",
+                "slot_definitions": {
+                    "LANGUAGE": "Language"
+                },
+                "example_phrase_ids": [
+                    "phrase_1d_1",
+                    "phrase_1d_ex2"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_1a_1",
+                "type": "phrase",
+                "text": "Kahve lütfen.",
+                "translation": "Coffee, please.",
+                "pronunciation": "Kah-veh lutf-en",
+                "audio_text": "Kahve lütfen",
+                "frame_id": "frame_1a",
+                "word_ids": [
+                    "word_lutfen",
+                    "word_kahve"
+                ]
+            },
+            {
+                "id": "phrase_1a_2",
+                "type": "phrase",
+                "text": "Su lütfen.",
+                "translation": "Water, please.",
+                "pronunciation": "Su lutf-en",
+                "audio_text": "Su lütfen",
+                "frame_id": "frame_1a",
+                "word_ids": [
+                    "word_lutfen",
+                    "word_su"
+                ]
+            },
+            {
+                "id": "phrase_1a_3",
+                "type": "phrase",
+                "text": "Hesap lütfen.",
+                "translation": "The bill, please.",
+                "pronunciation": "He-sap lutf-en",
+                "audio_text": "Hesap lütfen",
+                "frame_id": "frame_1a",
+                "tags": [
+                    "restaurant"
+                ],
+                "word_ids": [
+                    "word_lutfen",
+                    "word_hesap"
+                ]
+            },
+            {
+                "id": "phrase_1b_1",
+                "type": "phrase",
+                "text": "Ben Thomas.",
+                "translation": "I am Thomas.",
+                "pronunciation": "Ben To-mas",
+                "audio_text": "Ben Thomas",
+                "frame_id": "frame_1b",
+                "word_ids": [
+                    "word_ben"
+                ]
+            },
+            {
+                "id": "phrase_1b_2",
+                "type": "phrase",
+                "text": "Ben Anna.",
+                "translation": "I am Anna.",
+                "pronunciation": "Ben An-na",
+                "audio_text": "Ben Anna",
+                "frame_id": "frame_1b",
+                "word_ids": [
+                    "word_ben"
+                ]
+            },
+            {
+                "id": "phrase_1c_1",
+                "type": "phrase",
+                "text": "Tuvalet nerede?",
+                "translation": "Where is the toilet?",
+                "pronunciation": "Tu-val-et ne-re-de",
+                "audio_text": "Tuvalet nerede?",
+                "frame_id": "frame_1c",
+                "word_ids": [
+                    "word_nerede",
+                    "word_tuvalet"
+                ]
+            },
+            {
+                "id": "phrase_1c_2",
+                "type": "phrase",
+                "text": "Metro nerede?",
+                "translation": "Where is the subway?",
+                "pronunciation": "Met-ro ne-re-de",
+                "audio_text": "Metro nerede?",
+                "frame_id": "frame_1c",
+                "word_ids": [
+                    "word_nerede",
+                    "word_metro"
+                ]
+            },
+            {
+                "id": "phrase_1c_3",
+                "type": "phrase",
+                "text": "Otel nerede?",
+                "translation": "Where is the hotel?",
+                "pronunciation": "O-tel ne-re-de",
+                "audio_text": "Otel nerede?",
+                "frame_id": "frame_1c",
+                "word_ids": [
+                    "word_nerede",
+                    "word_otel"
+                ]
+            },
+            {
+                "id": "phrase_1d_1",
+                "type": "phrase",
+                "text": "Biraz Türkçe konuşuyorum.",
+                "translation": "I speak a little Turkish.",
+                "pronunciation": "Bi-raz Turk-che ko-nu-shu-yo-rum",
+                "audio_text": "Biraz Türkçe konuşuyorum",
+                "frame_id": "frame_1d",
+                "tags": [
+                    "core"
+                ],
+                "word_ids": [
+                    "word_biraz",
+                    "word_konusuyorum",
+                    "word_turkce"
+                ]
+            },
+            {
+                "id": "phrase_1d_ex2",
+                "type": "phrase",
+                "text": "Biraz İngilizce konuşuyorum.",
+                "translation": "I speak a little English.",
+                "pronunciation": "Bi-raz In-gi-liz-je ko-nu-shu-yo-rum",
+                "audio_text": "Biraz İngilizce konuşuyorum",
+                "frame_id": "frame_1d",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_biraz",
+                    "word_konusuyorum",
+                    "word_ingilizce"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_lutfen",
+                "lemma": "lütfen",
+                "translation": "please",
+                "pronunciation": "lutf-en"
+            },
+            {
+                "id": "word_kahve",
+                "lemma": "kahve",
+                "translation": "coffee",
+                "pronunciation": "Kah-veh"
+            },
+            {
+                "id": "word_su",
+                "lemma": "su",
+                "translation": "water",
+                "pronunciation": "Su"
+            },
+            {
+                "id": "word_hesap",
+                "lemma": "hesap",
+                "translation": "the bill",
+                "pronunciation": "He-sap"
+            },
+            {
+                "id": "word_ben",
+                "lemma": "ben",
+                "translation": "I",
+                "pronunciation": "Ben"
+            },
+            {
+                "id": "word_nerede",
+                "lemma": "nerede",
+                "translation": "where",
+                "pronunciation": "Ne-re-de"
+            },
+            {
+                "id": "word_tuvalet",
+                "lemma": "tuvalet",
+                "translation": "toilet",
+                "pronunciation": "Tu-val-et"
+            },
+            {
+                "id": "word_metro",
+                "lemma": "metro",
+                "translation": "subway",
+                "pronunciation": "Met-ro"
+            },
+            {
+                "id": "word_otel",
+                "lemma": "otel",
+                "translation": "hotel",
+                "pronunciation": "O-tel"
+            },
+            {
+                "id": "word_biraz",
+                "lemma": "biraz",
+                "translation": "a little",
+                "pronunciation": "Bi-raz"
+            },
+            {
+                "id": "word_konusuyorum",
+                "lemma": "konuşuyorum",
+                "translation": "I speak",
+                "pronunciation": "Ko-nu-shu-yo-rum"
+            },
+            {
+                "id": "word_turkce",
+                "lemma": "Türkçe",
+                "translation": "Turkish",
+                "pronunciation": "Turk-che"
+            },
+            {
+                "id": "word_ingilizce",
+                "lemma": "İngilizce",
+                "translation": "English",
+                "pronunciation": "In-gi-liz-je"
+            }
+        ]
+    },
+    "level_2": {
+        "id": "level_2",
+        "title": "Wants & Needs",
+        "goal": "Express desires, needs, and ask about prices.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_2a",
+                "type": "frame",
+                "template": "[NOUN] istiyorum",
+                "description": "Expressing desire (Things)",
+                "slot_definitions": {
+                    "NOUN": "What you want"
+                },
+                "example_phrase_ids": [
+                    "phrase_2a_1",
+                    "phrase_2a_2",
+                    "phrase_2a_3"
+                ]
+            },
+            {
+                "id": "frame_2b",
+                "type": "frame",
+                "template": "[NOUN] lazım",
+                "description": "Expressing necessity",
+                "slot_definitions": {
+                    "NOUN": "What you need"
+                },
+                "example_phrase_ids": [
+                    "phrase_2b_1",
+                    "phrase_2b_2",
+                    "phrase_2b_ex3"
+                ]
+            },
+            {
+                "id": "frame_2c",
+                "type": "frame",
+                "template": "[NOUN] ne kadar?",
+                "description": "Asking for price",
+                "slot_definitions": {
+                    "NOUN": "Item"
+                },
+                "example_phrase_ids": [
+                    "phrase_2c_1",
+                    "phrase_2c_2",
+                    "phrase_2c_ex3"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_2a_1",
+                "type": "phrase",
+                "text": "Bira istiyorum.",
+                "translation": "I want a beer.",
+                "pronunciation": "Bi-ra is-ti-yo-rum",
+                "audio_text": "Bira istiyorum",
+                "frame_id": "frame_2a",
+                "word_ids": [
+                    "word_bira",
+                    "word_istiyorum"
+                ]
+            },
+            {
+                "id": "phrase_2a_2",
+                "type": "phrase",
+                "text": "Su istiyorum.",
+                "translation": "I want water.",
+                "pronunciation": "Su is-ti-yo-rum",
+                "audio_text": "Su istiyorum",
+                "frame_id": "frame_2a",
+                "word_ids": [
+                    "word_su",
+                    "word_istiyorum"
+                ]
+            },
+            {
+                "id": "phrase_2a_3",
+                "type": "phrase",
+                "text": "Bilet istiyorum.",
+                "translation": "I want a ticket.",
+                "pronunciation": "Bi-let is-ti-yo-rum",
+                "audio_text": "Bilet istiyorum",
+                "frame_id": "frame_2a",
+                "word_ids": [
+                    "word_bilet",
+                    "word_istiyorum"
+                ]
+            },
+            {
+                "id": "phrase_2b_1",
+                "type": "phrase",
+                "text": "Yardım lazım.",
+                "translation": "I need help.",
+                "pronunciation": "Yar-dim la-zim",
+                "audio_text": "Yardım lazım",
+                "frame_id": "frame_2b",
+                "word_ids": [
+                    "word_yardim",
+                    "word_lazim"
+                ]
+            },
+            {
+                "id": "phrase_2b_2",
+                "type": "phrase",
+                "text": "Bilet lazım.",
+                "translation": "I need a ticket.",
+                "pronunciation": "Bi-let la-zim",
+                "audio_text": "Bilet lazım",
+                "frame_id": "frame_2b",
+                "word_ids": [
+                    "word_bilet",
+                    "word_lazim"
+                ]
+            },
+            {
+                "id": "phrase_2b_ex3",
+                "type": "phrase",
+                "text": "Su lazım.",
+                "translation": "I need water.",
+                "pronunciation": "Su la-zim",
+                "audio_text": "Su lazım",
+                "frame_id": "frame_2b",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_su",
+                    "word_lazim"
+                ]
+            },
+            {
+                "id": "phrase_2c_1",
+                "type": "phrase",
+                "text": "Bira ne kadar?",
+                "translation": "How much does the beer cost?",
+                "pronunciation": "Bi-ra ne ka-dar",
+                "audio_text": "Bira ne kadar?",
+                "frame_id": "frame_2c",
+                "word_ids": [
+                    "word_bira",
+                    "word_nekadar"
+                ]
+            },
+            {
+                "id": "phrase_2c_2",
+                "type": "phrase",
+                "text": "Bilet ne kadar?",
+                "translation": "How much does a ticket cost?",
+                "pronunciation": "Bi-let ne ka-dar",
+                "audio_text": "Bilet ne kadar?",
+                "frame_id": "frame_2c",
+                "word_ids": [
+                    "word_bilet",
+                    "word_nekadar"
+                ]
+            },
+            {
+                "id": "phrase_2c_ex3",
+                "type": "phrase",
+                "text": "Su ne kadar?",
+                "translation": "How much does water cost?",
+                "pronunciation": "Su ne ka-dar",
+                "audio_text": "Su ne kadar?",
+                "frame_id": "frame_2c",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_su",
+                    "word_nekadar"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_istiyorum",
+                "lemma": "istiyorum",
+                "translation": "I want",
+                "pronunciation": "Is-ti-yo-rum"
+            },
+            {
+                "id": "word_bira",
+                "lemma": "bira",
+                "translation": "beer",
+                "pronunciation": "Bi-ra"
+            },
+            {
+                "id": "word_lazim",
+                "lemma": "lazım",
+                "translation": "need / necessary",
+                "pronunciation": "La-zim"
+            },
+            {
+                "id": "word_yardim",
+                "lemma": "yardım",
+                "translation": "help",
+                "pronunciation": "Yar-dim"
+            },
+            {
+                "id": "word_bilet",
+                "lemma": "bilet",
+                "translation": "ticket",
+                "pronunciation": "Bi-let"
+            },
+            {
+                "id": "word_nekadar",
+                "lemma": "ne kadar",
+                "translation": "how much",
+                "pronunciation": "Ne ka-dar"
+            }
+        ]
+    },
+    "level_3": {
+        "id": "level_3",
+        "title": "Daily Actions",
+        "goal": "Describe your routine, yesterday, and future plans.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_3a",
+                "type": "frame",
+                "template": "Bugün [VERB]",
+                "description": "Describing today / routine",
+                "slot_definitions": {
+                    "VERB": "Present tense action"
+                },
+                "example_phrase_ids": [
+                    "phrase_3a_1",
+                    "phrase_3a_2",
+                    "phrase_3a_ex3"
+                ]
+            },
+            {
+                "id": "frame_3b",
+                "type": "frame",
+                "template": "Dün [PAST_VERB]",
+                "description": "Describing the past",
+                "slot_definitions": {
+                    "PAST_VERB": "Past tense verb"
+                },
+                "example_phrase_ids": [
+                    "phrase_3b_1",
+                    "phrase_3b_2",
+                    "phrase_3b_ex3"
+                ]
+            },
+            {
+                "id": "frame_3c",
+                "type": "frame",
+                "template": "Yarın [VERB]",
+                "description": "Future intent",
+                "slot_definitions": {
+                    "VERB": "Future verb"
+                },
+                "example_phrase_ids": [
+                    "phrase_3c_1",
+                    "phrase_3c_2",
+                    "phrase_3c_ex3"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_3a_1",
+                "type": "phrase",
+                "text": "Bugün çalışıyorum.",
+                "translation": "Today I am working.",
+                "audio_text": "Bugün çalışıyorum",
+                "pronunciation": "Bu-gun cha-lish-i-yo-rum",
+                "frame_id": "frame_3a",
+                "word_ids": [
+                    "word_bugun",
+                    "word_calisiyorum"
+                ]
+            },
+            {
+                "id": "phrase_3a_2",
+                "type": "phrase",
+                "text": "Bugün ders çalışıyorum.",
+                "translation": "Today I am studying.",
+                "audio_text": "Bugün ders çalışıyorum",
+                "pronunciation": "Bu-gun ders cha-lish-i-yo-rum",
+                "frame_id": "frame_3a",
+                "word_ids": [
+                    "word_bugun",
+                    "word_derscalisiyorum"
+                ]
+            },
+            {
+                "id": "phrase_3a_ex3",
+                "type": "phrase",
+                "text": "Bugün seyahat ediyorum.",
+                "translation": "Today I am traveling.",
+                "audio_text": "Bugün seyahat ediyorum",
+                "pronunciation": "Bu-gun se-ya-hat e-di-yo-rum",
+                "frame_id": "frame_3a",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_bugun",
+                    "word_seyahatediyorum"
+                ]
+            },
+            {
+                "id": "phrase_3b_1",
+                "type": "phrase",
+                "text": "Dün çalıştım.",
+                "translation": "Yesterday I worked.",
+                "audio_text": "Dün çalıştım",
+                "pronunciation": "Dun cha-lish-tim",
+                "frame_id": "frame_3b",
+                "word_ids": [
+                    "word_dun",
+                    "word_calistim"
+                ]
+            },
+            {
+                "id": "phrase_3b_2",
+                "type": "phrase",
+                "text": "Dün uyudum.",
+                "translation": "Yesterday I slept.",
+                "audio_text": "Dün uyudum",
+                "pronunciation": "Dun u-yu-dum",
+                "frame_id": "frame_3b",
+                "word_ids": [
+                    "word_dun",
+                    "word_uyudum"
+                ]
+            },
+            {
+                "id": "phrase_3b_ex3",
+                "type": "phrase",
+                "text": "Dün seyahat ettim.",
+                "translation": "Yesterday I traveled.",
+                "audio_text": "Dün seyahat ettim",
+                "pronunciation": "Dun se-ya-hat et-tim",
+                "frame_id": "frame_3b",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_dun",
+                    "word_seyahatettim"
+                ]
+            },
+            {
+                "id": "phrase_3c_1",
+                "type": "phrase",
+                "text": "Yarın çalışacağım.",
+                "translation": "Tomorrow I will work.",
+                "audio_text": "Yarın çalışacağım",
+                "pronunciation": "Ya-rin cha-lish-a-ja-gim",
+                "frame_id": "frame_3c",
+                "word_ids": [
+                    "word_yarin",
+                    "word_calisacagim"
+                ]
+            },
+            {
+                "id": "phrase_3c_2",
+                "type": "phrase",
+                "text": "Yarın seyahat edeceğim.",
+                "translation": "Tomorrow I will travel.",
+                "audio_text": "Yarın seyahat edeceğim",
+                "pronunciation": "Ya-rin se-ya-hat e-de-ja-gim",
+                "frame_id": "frame_3c",
+                "word_ids": [
+                    "word_yarin",
+                    "word_seyahatedecegim"
+                ]
+            },
+            {
+                "id": "phrase_3c_ex3",
+                "type": "phrase",
+                "text": "Yarın uyuyacağım.",
+                "translation": "Tomorrow I will sleep.",
+                "audio_text": "Yarın uyuyacağım",
+                "pronunciation": "Ya-rin u-yu-ya-ja-gim",
+                "frame_id": "frame_3c",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_yarin",
+                    "word_uyuyacagim"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_bugun",
+                "lemma": "bugün",
+                "translation": "today",
+                "pronunciation": "Bu-gun"
+            },
+            {
+                "id": "word_dun",
+                "lemma": "dün",
+                "translation": "yesterday",
+                "pronunciation": "Dun"
+            },
+            {
+                "id": "word_yarin",
+                "lemma": "yarın",
+                "translation": "tomorrow",
+                "pronunciation": "Ya-rin"
+            },
+            {
+                "id": "word_calisiyorum",
+                "lemma": "çalışıyorum",
+                "translation": "I am working",
+                "pronunciation": "Cha-lish-i-yo-rum"
+            },
+            {
+                "id": "word_calistim",
+                "lemma": "çalıştım",
+                "translation": "I worked",
+                "pronunciation": "Cha-lish-tim"
+            },
+            {
+                "id": "word_calisacagim",
+                "lemma": "çalışacağım",
+                "translation": "I will work",
+                "pronunciation": "Cha-lish-a-ja-gim"
+            }
+        ]
+    },
+    "level_4": {
+        "id": "level_4",
+        "title": "Opinions & Situations",
+        "goal": "Explain problems, give opinions, and narrate simple events.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_4a",
+                "type": "frame",
+                "template": "[CLAUSE] sanırım",
+                "description": "Expressing opinion",
+                "slot_definitions": {
+                    "CLAUSE": "Phrase"
+                },
+                "example_phrase_ids": [
+                    "phrase_4a_1",
+                    "phrase_4a_2",
+                    "phrase_4a_ex3"
+                ]
+            },
+            {
+                "id": "frame_4b",
+                "type": "frame",
+                "template": "[VERB] lazım",
+                "description": "Obligation / Necessity",
+                "slot_definitions": {
+                    "VERB": "Action"
+                },
+                "example_phrase_ids": [
+                    "phrase_4b_1",
+                    "phrase_4b_2"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_4a_1",
+                "type": "phrase",
+                "text": "Bu iyi sanırım.",
+                "translation": "I think that it is good.",
+                "audio_text": "Bu iyi sanırım",
+                "pronunciation": "Bu i-yi sa-ni-rim",
+                "frame_id": "frame_4a",
+                "word_ids": [
+                    "word_bu_iyi",
+                    "word_sanirim"
+                ]
+            },
+            {
+                "id": "phrase_4a_2",
+                "type": "phrase",
+                "text": "Bu doğru değil sanırım.",
+                "translation": "I think that it is not true.",
+                "audio_text": "Bu doğru değil sanırım",
+                "pronunciation": "Bu dog-ru deg-il sa-ni-rim",
+                "frame_id": "frame_4a",
+                "word_ids": [
+                    "word_bu_dogru_degil",
+                    "word_sanirim"
+                ]
+            },
+            {
+                "id": "phrase_4a_ex3",
+                "type": "phrase",
+                "text": "Bu problem sanırım.",
+                "translation": "I think that is a problem.",
+                "audio_text": "Bu problem sanırım",
+                "pronunciation": "Bu prob-lem sa-ni-rim",
+                "frame_id": "frame_4a",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_bu_problem",
+                    "word_sanirim"
+                ]
+            },
+            {
+                "id": "phrase_4b_2",
+                "type": "phrase",
+                "text": "Çalışmam lazım.",
+                "translation": "I must work.",
+                "audio_text": "Çalışmam lazım",
+                "pronunciation": "Cha-lish-mam la-zim",
+                "frame_id": "frame_4b",
+                "word_ids": [
+                    "word_calismam",
+                    "word_lazim"
+                ]
+            },
+            {
+                "id": "phrase_4b_1",
+                "type": "phrase",
+                "text": "Eve gitmem lazım.",
+                "translation": "I must go home.",
+                "audio_text": "Eve gitmem lazım",
+                "pronunciation": "E-ve git-mem la-zim",
+                "frame_id": "frame_4b",
+                "word_ids": [
+                    "word_eve_gitmem",
+                    "word_lazim"
+                ]
+            },
+            {
+                "id": "phrase_4b_ex3",
+                "type": "phrase",
+                "text": "Uyumam lazım.",
+                "translation": "I must sleep.",
+                "audio_text": "Uyumam lazım",
+                "pronunciation": "U-yu-mam la-zim",
+                "frame_id": "frame_4b",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_uyumam",
+                    "word_lazim"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_sanirim",
+                "lemma": "sanırım",
+                "translation": "I think",
+                "pronunciation": "Sa-ni-rim"
+            },
+            {
+                "id": "word_bu_iyi",
+                "lemma": "bu iyi",
+                "translation": "it is good",
+                "pronunciation": "Bu i-yi"
+            },
+            {
+                "id": "word_bu_dogru_degil",
+                "lemma": "bu doğru değil",
+                "translation": "it is not true",
+                "pronunciation": "Bu dog-ru deg-il"
+            },
+            {
+                "id": "word_bu_problem",
+                "lemma": "bu sorun",
+                "translation": "it is a problem",
+                "pronunciation": "Bu so-run"
+            },
+            {
+                "id": "word_lazim",
+                "lemma": "lazım",
+                "translation": "need to/must",
+                "pronunciation": "La-zim"
+            },
+            {
+                "id": "word_calismam",
+                "lemma": "çalışmam",
+                "translation": "my working",
+                "pronunciation": "Cha-lish-mam"
+            },
+            {
+                "id": "word_eve_gitmem",
+                "lemma": "eve gitmem",
+                "translation": "my going home",
+                "pronunciation": "E-ve git-mem"
+            },
+            {
+                "id": "word_uyumam",
+                "lemma": "uyumam",
+                "translation": "my sleeping",
+                "pronunciation": "U-yu-mam"
+            }
+        ]
+    },
+    "level_5": {
+        "id": "level_5",
+        "title": "Experiences & Reasons",
+        "goal": "Talk about experiences, explain reasons, and connect ideas.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_5a",
+                "type": "frame",
+                "template": "[CLAUSE] çünkü",
+                "description": "Explaining reason",
+                "slot_definitions": {
+                    "CLAUSE": "Reason"
+                },
+                "example_phrase_ids": [
+                    "phrase_5a_1",
+                    "phrase_5a_2"
+                ]
+            },
+            {
+                "id": "frame_5b",
+                "type": "frame",
+                "template": "[NOUN] seviyorum",
+                "description": "Expressing Likes",
+                "slot_definitions": {
+                    "NOUN": "Object"
+                },
+                "example_phrase_ids": [
+                    "phrase_5b_1",
+                    "phrase_5b_2"
+                ]
+            },
+            {
+                "id": "frame_5c",
+                "type": "frame",
+                "template": "[CLAUSE A] zaman, [CLAUSE B]",
+                "description": "Conditionals (When...)",
+                "slot_definitions": {
+                    "CLAUSE A": "Condition"
+                },
+                "example_phrase_ids": [
+                    "phrase_5c_1",
+                    "phrase_5c_2"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_5a_1",
+                "type": "phrase",
+                "text": "Çalışıyorum çünkü.",
+                "translation": "Because I work.",
+                "audio_text": "Çalışıyorum çünkü",
+                "pronunciation": "Cha-lish-i-yo-rum chun-ku",
+                "frame_id": "frame_5a",
+                "word_ids": [
+                    "word_calisiyorum",
+                    "word_cunku"
+                ]
+            },
+            {
+                "id": "phrase_5a_2",
+                "type": "phrase",
+                "text": "Zamanım yok çünkü.",
+                "translation": "Because I don't have time.",
+                "audio_text": "Zamanım yok çünkü",
+                "pronunciation": "Za-ma-nim yok chun-ku",
+                "frame_id": "frame_5a",
+                "word_ids": [
+                    "word_zamanim_yok",
+                    "word_cunku"
+                ]
+            },
+            {
+                "id": "phrase_5b_1",
+                "type": "phrase",
+                "text": "Kahve seviyorum.",
+                "translation": "I like coffee.",
+                "audio_text": "Kahve seviyorum",
+                "pronunciation": "Kah-veh se-vi-yo-rum",
+                "frame_id": "frame_5b",
+                "word_ids": [
+                    "word_kahve",
+                    "word_seviyorum"
+                ]
+            },
+            {
+                "id": "phrase_5b_2",
+                "type": "phrase",
+                "text": "Kışı sevmiyorum.",
+                "translation": "I don't like winter.",
+                "audio_text": "Kışı sevmiyorum",
+                "pronunciation": "Ki-shi sev-mi-yo-rum",
+                "frame_id": "frame_5b",
+                "word_ids": [
+                    "word_kisi",
+                    "word_sevmiyorum"
+                ]
+            },
+            {
+                "id": "phrase_5c_1",
+                "type": "phrase",
+                "text": "Zamanım olduğu zaman, uyurum.",
+                "translation": "When I have time, I sleep.",
+                "audio_text": "Zamanım olduğu zaman, uyurum",
+                "pronunciation": "Za-ma-nim ol-du-gu za-man u-yu-rum",
+                "frame_id": "frame_5c",
+                "word_ids": [
+                    "word_zamanim_oldugu",
+                    "word_zaman",
+                    "word_uyurum"
+                ]
+            },
+            {
+                "id": "phrase_5c_2",
+                "type": "phrase",
+                "text": "Çalıştığım zaman, gelemem.",
+                "translation": "When I work, I can't come.",
+                "audio_text": "Çalıştığım zaman, gelemem",
+                "pronunciation": "Cha-lish-ti-gim za-man ge-le-mem",
+                "frame_id": "frame_5c",
+                "word_ids": [
+                    "word_calistigim",
+                    "word_zaman",
+                    "word_gelemem"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_cunku",
+                "lemma": "çünkü",
+                "translation": "because",
+                "pronunciation": "Chun-ku"
+            },
+            {
+                "id": "word_seviyorum",
+                "lemma": "seviyorum",
+                "translation": "like",
+                "pronunciation": "Se-vi-yo-rum"
+            },
+            {
+                "id": "word_sevmiyorum",
+                "lemma": "sevmiyorum",
+                "translation": "don't like",
+                "pronunciation": "Sev-mi-yo-rum"
+            },
+            {
+                "id": "word_kisi",
+                "lemma": "Kışı",
+                "translation": "winter (accusative)",
+                "pronunciation": "Ki-shi"
+            },
+            {
+                "id": "word_zaman",
+                "lemma": "zaman",
+                "translation": "when/time",
+                "pronunciation": "Za-man"
+            },
+            {
+                "id": "word_zamanim_yok",
+                "lemma": "zamanım yok",
+                "translation": "don't have time",
+                "pronunciation": "Za-ma-nim yok"
+            },
+            {
+                "id": "word_uyurum",
+                "lemma": "uyurum",
+                "translation": "I sleep (aorist)",
+                "pronunciation": "U-yu-rum"
+            },
+            {
+                "id": "word_gelemem",
+                "lemma": "gelemem",
+                "translation": "I cannot come",
+                "pronunciation": "Ge-le-mem"
+            }
+        ]
+    },
+    "level_6": {
+        "id": "level_6",
+        "title": "Plans & Possibilities",
+        "goal": "Discuss plans, possibilities, and constraints.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_6a",
+                "type": "frame",
+                "template": "[VERB] planlıyorum",
+                "description": "Planning",
+                "slot_definitions": {
+                    "VERB": "Action"
+                },
+                "example_phrase_ids": [
+                    "phrase_6a_1"
+                ]
+            },
+            {
+                "id": "frame_6b",
+                "type": "frame",
+                "template": "[VERB] -ebilirim",
+                "description": "Possibility (Can)",
+                "slot_definitions": {
+                    "VERB": "Action"
+                },
+                "example_phrase_ids": [
+                    "phrase_6b_1",
+                    "phrase_6b_2"
+                ]
+            },
+            {
+                "id": "frame_6c",
+                "type": "frame",
+                "template": "Belki [CLAUSE]",
+                "description": "Uncertainty",
+                "slot_definitions": {
+                    "CLAUSE": "Statement"
+                },
+                "example_phrase_ids": [
+                    "phrase_6c_1",
+                    "phrase_6c_2"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_6a_1",
+                "type": "phrase",
+                "text": "Yarın çalışmayı planlıyorum.",
+                "translation": "I plan to work tomorrow.",
+                "audio_text": "Yarın çalışmayı planlıyorum",
+                "pronunciation": "Ya-rin cha-lish-ma-yi plan-li-yo-rum",
+                "frame_id": "frame_6a",
+                "word_ids": [
+                    "word_yarin",
+                    "word_calismayi",
+                    "word_planliyorum"
+                ]
+            },
+            {
+                "id": "phrase_6b_1",
+                "type": "phrase",
+                "text": "Akşam gelebilirim.",
+                "translation": "I can come in the evening.",
+                "audio_text": "Akşam gelebilirim",
+                "pronunciation": "Ak-sham ge-le-bi-li-rim",
+                "frame_id": "frame_6b",
+                "word_ids": [
+                    "word_aksam",
+                    "word_gelebilirim"
+                ]
+            },
+            {
+                "id": "phrase_6b_2",
+                "type": "phrase",
+                "text": "Bugün gelemem.",
+                "translation": "I can't come today.",
+                "audio_text": "Bugün gelemem",
+                "pronunciation": "Bu-gun ge-le-mem",
+                "frame_id": "frame_6b",
+                "word_ids": [
+                    "word_bugun",
+                    "word_gelemem"
+                ]
+            },
+            {
+                "id": "phrase_6c_1",
+                "type": "phrase",
+                "text": "Belki çalışırım.",
+                "translation": "Maybe I will work.",
+                "audio_text": "Belki çalışırım",
+                "pronunciation": "Bel-ki cha-lish-i-rim",
+                "frame_id": "frame_6c",
+                "word_ids": [
+                    "word_belki",
+                    "word_calisirim"
+                ]
+            },
+            {
+                "id": "phrase_6c_2",
+                "type": "phrase",
+                "text": "Belki zamanım yok.",
+                "translation": "Maybe I don't have time.",
+                "audio_text": "Belki zamanım yok",
+                "pronunciation": "Bel-ki za-ma-nim yok",
+                "frame_id": "frame_6c",
+                "word_ids": [
+                    "word_belki",
+                    "word_zamanim_yok"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_planliyorum",
+                "lemma": "planlıyorum",
+                "translation": "I plan to",
+                "pronunciation": "Plan-li-yo-rum"
+            },
+            {
+                "id": "word_gelebilirim",
+                "lemma": "gelebilirim",
+                "translation": "I can come",
+                "pronunciation": "Ge-le-bi-li-rim"
+            },
+            {
+                "id": "word_gelemem",
+                "lemma": "gelemem",
+                "translation": "I cannot come",
+                "pronunciation": "Ge-le-mem"
+            },
+            {
+                "id": "word_aksam",
+                "lemma": "akşam",
+                "translation": "evening",
+                "pronunciation": "Ak-sham"
+            },
+            {
+                "id": "word_belki",
+                "lemma": "belki",
+                "translation": "maybe",
+                "pronunciation": "Bel-ki"
+            },
+            {
+                "id": "word_calisirim",
+                "lemma": "çalışırım",
+                "translation": "I work (maybe)",
+                "pronunciation": "Cha-lish-i-rim"
+            }
+        ]
+    },
+    "level_7": {
+        "id": "level_7",
+        "title": "Narrating Stories",
+        "goal": "Tell short, coherent stories about past events.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_7a",
+                "type": "frame",
+                "template": "Önce..., Sonra..., Sonunda...",
+                "description": "Sequencing events",
+                "slot_definitions": {
+                    "...": "Events"
+                },
+                "example_phrase_ids": [
+                    "phrase_7a_1",
+                    "phrase_7a_2",
+                    "phrase_7a_3"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_7a_1",
+                "type": "phrase",
+                "text": "Önce çalıştım.",
+                "translation": "First I worked.",
+                "audio_text": "Önce çalıştım",
+                "pronunciation": "On-je cha-lish-tim",
+                "frame_id": "frame_7a",
+                "word_ids": [
+                    "word_once",
+                    "word_calistim"
+                ]
+            },
+            {
+                "id": "phrase_7a_2",
+                "type": "phrase",
+                "text": "Sonra eve gittim.",
+                "translation": "Then I went home.",
+                "audio_text": "Sonra eve gittim",
+                "pronunciation": "Son-ra e-ve git-tim",
+                "frame_id": "frame_7a",
+                "word_ids": [
+                    "word_sonra",
+                    "word_eve_gittim"
+                ]
+            },
+            {
+                "id": "phrase_7a_3",
+                "type": "phrase",
+                "text": "Sonunda uyudum.",
+                "translation": "Finally I slept.",
+                "audio_text": "Sonunda uyudum",
+                "pronunciation": "So-nun-da u-yu-dum",
+                "frame_id": "frame_7a",
+                "word_ids": [
+                    "word_sonunda",
+                    "word_uyudum"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_once",
+                "lemma": "önce",
+                "translation": "first / before",
+                "pronunciation": "On-je"
+            },
+            {
+                "id": "word_sonra",
+                "lemma": "sonra",
+                "translation": "then / after",
+                "pronunciation": "Son-ra"
+            },
+            {
+                "id": "word_eve_gittim",
+                "lemma": "eve gittim",
+                "translation": "went home",
+                "pronunciation": "E-ve git-tim"
+            },
+            {
+                "id": "word_sonunda",
+                "lemma": "sonunda",
+                "translation": "finally",
+                "pronunciation": "So-nun-da"
+            },
+            {
+                "id": "word_calistim",
+                "lemma": "çalıştım",
+                "translation": "worked",
+                "pronunciation": "Cha-lish-tim"
+            },
+            {
+                "id": "word_uyudum",
+                "lemma": "uyudum",
+                "translation": "slept",
+                "pronunciation": "U-yu-dum"
+            }
+        ]
+    },
+    "level_8": {
+        "id": "level_8",
+        "title": "Problems & Solutions",
+        "goal": "Explain problems, causes, and possible solutions.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_8a",
+                "type": "frame",
+                "template": "[NOUN] ile ilgili bir sorunum var",
+                "description": "Stating probelm",
+                "slot_definitions": {
+                    "NOUN": "Issue"
+                },
+                "example_phrase_ids": [
+                    "phrase_8a_1"
+                ]
+            },
+            {
+                "id": "frame_8b",
+                "type": "frame",
+                "template": "Bu yüzden [VERB] lazım",
+                "description": "Consequence",
+                "slot_definitions": {
+                    "VERB": "Action"
+                },
+                "example_phrase_ids": [
+                    "phrase_8b_1"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_8a_1",
+                "type": "phrase",
+                "text": "İş ile ilgili bir sorunum var.",
+                "translation": "I have a problem with work.",
+                "audio_text": "İş ile ilgili bir sorunum var",
+                "pronunciation": "Ish i-le il-gi-li bir so-ru-num var",
+                "frame_id": "frame_8a",
+                "word_ids": [
+                    "word_is",
+                    "word_ile_ilgili_sorunum_var"
+                ]
+            },
+            {
+                "id": "phrase_8b_1",
+                "type": "phrase",
+                "text": "Bu yüzden evden çalışmam lazım.",
+                "translation": "Therefore I must work at home.",
+                "audio_text": "Bu yüzden evden çalışmam lazım",
+                "pronunciation": "Bu yuz-den ev-den cha-lish-mam la-zim",
+                "frame_id": "frame_8b",
+                "word_ids": [
+                    "word_bu_yuzden",
+                    "word_evden_calismam",
+                    "word_lazim"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_ile_ilgili_sorunum_var",
+                "lemma": "ile ilgili bir sorunum var",
+                "translation": "have a problem with",
+                "pronunciation": "I-le il-gi-li bir so-ru-num var"
+            },
+            {
+                "id": "word_is",
+                "lemma": "iş",
+                "translation": "work",
+                "pronunciation": "Ish"
+            },
+            {
+                "id": "word_bu_yuzden",
+                "lemma": "bu yüzden",
+                "translation": "therefore",
+                "pronunciation": "Bu yuz-den"
+            },
+            {
+                "id": "word_evden_calismam",
+                "lemma": "evden çalışmam",
+                "translation": "my working from home",
+                "pronunciation": "Ev-den cha-lish-mam"
+            }
+        ]
+    },
+    "level_9": {
+        "id": "level_9",
+        "title": "Opinions & Reactions",
+        "goal": "Express opinions, agreement, disagreement, and uncertainty.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_9a",
+                "type": "frame",
+                "template": "Bence [CLAUSE]",
+                "description": "Opinion",
+                "slot_definitions": {
+                    "CLAUSE": "Opinion"
+                },
+                "example_phrase_ids": [
+                    "phrase_9a_1"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_9a_1",
+                "type": "phrase",
+                "text": "Bence bu iyi.",
+                "translation": "In my opinion, it's good.",
+                "audio_text": "Bence bu iyi",
+                "pronunciation": "Ben-je bu i-yi",
+                "frame_id": "frame_9a",
+                "word_ids": [
+                    "word_bence",
+                    "word_bu_iyi"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_bence",
+                "lemma": "bence",
+                "translation": "in my opinion",
+                "pronunciation": "Ben-je"
+            },
+            {
+                "id": "word_bu_iyi",
+                "lemma": "bu iyi",
+                "translation": "this is good",
+                "pronunciation": "Bu i-yi"
+            }
+        ]
+    },
+    "level_10": {
+        "id": "level_10",
+        "title": "Conversations & Nuance",
+        "goal": "Control conversations, clarify meaning, and soften statements.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_10a",
+                "type": "frame",
+                "template": "Bu [CLAUSE] demek",
+                "description": "Clarification",
+                "slot_definitions": {
+                    "CLAUSE": "Explanation"
+                },
+                "example_phrase_ids": [
+                    "phrase_10a_1"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_10a_1",
+                "type": "phrase",
+                "text": "Bu zamanım yok demek.",
+                "translation": "That means that I don't have time.",
+                "audio_text": "Bu zamanım yok demek",
+                "pronunciation": "Bu za-ma-nim yok de-mek",
+                "frame_id": "frame_10a",
+                "word_ids": [
+                    "word_bu",
+                    "word_zamanim_yok",
+                    "word_demek"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_bu",
+                "lemma": "bu",
+                "translation": "this/that",
+                "pronunciation": "Bu"
+            },
+            {
+                "id": "word_demek",
+                "lemma": "demek",
+                "translation": "means",
+                "pronunciation": "De-mek"
+            }
+        ]
+    }
+}

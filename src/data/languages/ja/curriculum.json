@@ -1,0 +1,1669 @@
+{
+    "level_1": {
+        "id": "level_1",
+        "title": "Survival Interaction",
+        "goal": "Greet politely, introduce yourself, order items, and ask for help.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_1a",
+                "type": "frame",
+                "template": "[NOUN] をお願いします",
+                "description": "Polite request / Ordering",
+                "slot_definitions": {
+                    "NOUN": "Object you want"
+                },
+                "example_phrase_ids": [
+                    "phrase_1a_1",
+                    "phrase_1a_2",
+                    "phrase_1a_3"
+                ]
+            },
+            {
+                "id": "frame_1b",
+                "type": "frame",
+                "template": "私は [NAME] です",
+                "description": "Introducing yourself",
+                "slot_definitions": {
+                    "NAME": "Your name"
+                },
+                "example_phrase_ids": [
+                    "phrase_1b_1",
+                    "phrase_1b_2",
+                    "phrase_1b_ex3"
+                ]
+            },
+            {
+                "id": "frame_1c",
+                "type": "frame",
+                "template": "[PLACE/THING] はどこですか？",
+                "description": "Asking for location",
+                "slot_definitions": {
+                    "PLACE/THING": "The place or object"
+                },
+                "example_phrase_ids": [
+                    "phrase_1c_1",
+                    "phrase_1c_2",
+                    "phrase_1c_3"
+                ]
+            },
+            {
+                "id": "frame_1d",
+                "type": "frame",
+                "template": "[LANGUAGE] が少し話せます",
+                "description": "Language Skills",
+                "slot_definitions": {
+                    "LANGUAGE": "Language"
+                },
+                "example_phrase_ids": [
+                    "phrase_1d_1",
+                    "phrase_1d_ex2",
+                    "phrase_1d_ex3"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_1a_1",
+                "type": "phrase",
+                "text": "コーヒーをお願いします。",
+                "translation": "Coffee, please.",
+                "pronunciation": "Koo-hii o o-ne-gai-shi-ma-su",
+                "audio_text": "コーヒーをお願いします",
+                "frame_id": "frame_1a",
+                "word_ids": [
+                    "word_onegaishimasu",
+                    "word_kava"
+                ]
+            },
+            {
+                "id": "phrase_1a_2",
+                "type": "phrase",
+                "text": "水をお願いします。",
+                "translation": "Water, please.",
+                "pronunciation": "Mi-zu o o-ne-gai-shi-ma-su",
+                "audio_text": "水をお願いします",
+                "frame_id": "frame_1a",
+                "word_ids": [
+                    "word_onegaishimasu",
+                    "word_voda"
+                ]
+            },
+            {
+                "id": "phrase_1a_3",
+                "type": "phrase",
+                "text": "お会計をお願いします。",
+                "translation": "The bill, please.",
+                "pronunciation": "O-kai-kei o o-ne-gai-shi-ma-su",
+                "audio_text": "お会計をお願いします",
+                "frame_id": "frame_1a",
+                "tags": [
+                    "restaurant"
+                ],
+                "word_ids": [
+                    "word_onegaishimasu",
+                    "word_ucet"
+                ]
+            },
+            {
+                "id": "phrase_1b_1",
+                "type": "phrase",
+                "text": "私はトーマスです。",
+                "translation": "I am Thomas.",
+                "pronunciation": "Wa-ta-shi wa Too-ma-su de-su",
+                "audio_text": "私はトーマスです",
+                "frame_id": "frame_1b",
+                "word_ids": [
+                    "word_ja",
+                    "word_jsem"
+                ]
+            },
+            {
+                "id": "phrase_1b_2",
+                "type": "phrase",
+                "text": "私はアンナです。",
+                "translation": "I am Anna.",
+                "pronunciation": "Wa-ta-shi wa An-na de-su",
+                "audio_text": "私はアンナです",
+                "frame_id": "frame_1b",
+                "word_ids": [
+                    "word_ja",
+                    "word_jsem"
+                ]
+            },
+            {
+                "id": "phrase_1b_3",
+                "type": "phrase",
+                "text": "トーマスです。",
+                "translation": "I'm Thomas (Simple).",
+                "pronunciation": "Too-ma-su de-su",
+                "audio_text": "トーマスです",
+                "frame_id": "frame_1b",
+                "tags": [
+                    "variation"
+                ],
+                "word_ids": [
+                    "word_jsem"
+                ]
+            },
+            {
+                "id": "phrase_1b_ex3",
+                "type": "phrase",
+                "text": "私はピーターです。",
+                "translation": "I am Peter.",
+                "pronunciation": "Wa-ta-shi wa Pii-taa de-su",
+                "audio_text": "私はピーターです",
+                "frame_id": "frame_1b",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_ja",
+                    "word_jsem"
+                ]
+            },
+            {
+                "id": "phrase_1c_1",
+                "type": "phrase",
+                "text": "トイレはどこですか？",
+                "translation": "Where is the toilet?",
+                "pronunciation": "To-i-re wa do-ko de-su ka?",
+                "audio_text": "トイレはどこですか？",
+                "frame_id": "frame_1c",
+                "word_ids": [
+                    "word_kde",
+                    "word_je",
+                    "word_toaleta"
+                ]
+            },
+            {
+                "id": "phrase_1c_2",
+                "type": "phrase",
+                "text": "地下鉄はどこですか？",
+                "translation": "Where is the subway?",
+                "pronunciation": "Chi-ka-te-tsu wa do-ko de-su ka?",
+                "audio_text": "地下鉄はどこですか？",
+                "frame_id": "frame_1c",
+                "word_ids": [
+                    "word_kde",
+                    "word_je",
+                    "word_metro"
+                ]
+            },
+            {
+                "id": "phrase_1c_3",
+                "type": "phrase",
+                "text": "ホテルはどこですか？",
+                "translation": "Where is the hotel?",
+                "pronunciation": "Ho-te-ru wa do-ko de-su ka?",
+                "audio_text": "ホテルはどこですか？",
+                "frame_id": "frame_1c",
+                "word_ids": [
+                    "word_kde",
+                    "word_je",
+                    "word_hotel"
+                ]
+            },
+            {
+                "id": "phrase_1d_1",
+                "type": "phrase",
+                "text": "日本語が少し話せます。",
+                "translation": "I speak a little Japanese.",
+                "pronunciation": "Ni-hon-go ga su-ko-shi ha-na-se-ma-su",
+                "audio_text": "日本語が少し話せます",
+                "frame_id": "frame_1d",
+                "tags": [
+                    "core",
+                    "anxiety-reducing"
+                ],
+                "word_ids": [
+                    "word_mluvim",
+                    "word_trochu",
+                    "word_cesky"
+                ]
+            },
+            {
+                "id": "phrase_1d_ex2",
+                "type": "phrase",
+                "text": "英語が少し話せます。",
+                "translation": "I speak a little English.",
+                "pronunciation": "Ei-go ga su-ko-shi ha-na-se-ma-su",
+                "audio_text": "英語が少し話せます",
+                "frame_id": "frame_1d",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_mluvim",
+                    "word_trochu"
+                ]
+            },
+            {
+                "id": "phrase_1d_ex3",
+                "type": "phrase",
+                "text": "ドイツ語が少し話せます。",
+                "translation": "I speak a little German.",
+                "pronunciation": "Do-i-tsu-go ga su-ko-shi ha-na-se-ma-su",
+                "audio_text": "ドイツ語が少し話せます",
+                "frame_id": "frame_1d",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_mluvim",
+                    "word_trochu"
+                ]
+            },
+            {
+                "id": "phrase_1_bonus_1",
+                "type": "phrase",
+                "text": "わかりません。",
+                "translation": "I don't understand.",
+                "pronunciation": "Wa-ka-ri-ma-sen",
+                "audio_text": "わかりません",
+                "word_ids": [
+                    "word_nerozumim"
+                ]
+            },
+            {
+                "id": "phrase_1_bonus_2",
+                "type": "phrase",
+                "text": "ありがとうございます。",
+                "translation": "Thank you.",
+                "pronunciation": "A-ri-ga-tou go-zai-ma-su",
+                "audio_text": "ありがとうございます",
+                "word_ids": [
+                    "word_dekuji"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_onegaishimasu",
+                "lemma": "お願いします",
+                "translation": "please",
+                "pronunciation": "O-ne-gai-shi-ma-su"
+            },
+            {
+                "id": "word_kava",
+                "lemma": "コーヒー",
+                "translation": "coffee",
+                "pronunciation": "Koo-hii"
+            },
+            {
+                "id": "word_voda",
+                "lemma": "水",
+                "translation": "water",
+                "pronunciation": "Mi-zu"
+            },
+            {
+                "id": "word_ucet",
+                "lemma": "お会計",
+                "translation": "the bill",
+                "pronunciation": "O-kai-kei"
+            },
+            {
+                "id": "word_ja",
+                "lemma": "私",
+                "translation": "I",
+                "pronunciation": "Wa-ta-shi"
+            },
+            {
+                "id": "word_jsem",
+                "lemma": "〜です",
+                "translation": "am / is / are",
+                "pronunciation": "De-su"
+            },
+            {
+                "id": "word_kde",
+                "lemma": "どこ",
+                "translation": "where",
+                "pronunciation": "Do-ko"
+            },
+            {
+                "id": "word_je",
+                "lemma": "です",
+                "translation": "is",
+                "pronunciation": "De-su"
+            },
+            {
+                "id": "word_toaleta",
+                "lemma": "トイレ",
+                "translation": "toilet",
+                "pronunciation": "To-i-re"
+            },
+            {
+                "id": "word_metro",
+                "lemma": "地下鉄",
+                "translation": "subway",
+                "pronunciation": "Chi-ka-te-tsu"
+            },
+            {
+                "id": "word_hotel",
+                "lemma": "ホテル",
+                "translation": "hotel",
+                "pronunciation": "Ho-te-ru"
+            },
+            {
+                "id": "word_nerozumim",
+                "lemma": "わかりません",
+                "translation": "don't understand",
+                "pronunciation": "Wa-ka-ri-ma-sen"
+            },
+            {
+                "id": "word_dekuji",
+                "lemma": "ありがとうございます",
+                "translation": "thank you",
+                "pronunciation": "A-ri-ga-tou"
+            },
+            {
+                "id": "word_mluvim",
+                "lemma": "話せます",
+                "translation": "can speak",
+                "pronunciation": "Ha-na-se-ma-su"
+            },
+            {
+                "id": "word_trochu",
+                "lemma": "少し",
+                "translation": "a little",
+                "pronunciation": "Su-ko-shi"
+            },
+            {
+                "id": "word_cesky",
+                "lemma": "日本語",
+                "translation": "Japanese",
+                "pronunciation": "Ni-hon-go"
+            }
+        ]
+    },
+    "level_2": {
+        "id": "level_2",
+        "title": "Wants & Needs",
+        "goal": "Express desires, needs, and ask about prices.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_2a",
+                "type": "frame",
+                "template": "[NOUN] が欲しいです",
+                "description": "Expressing desire (Things)",
+                "slot_definitions": {
+                    "NOUN": "What you want"
+                },
+                "example_phrase_ids": [
+                    "phrase_2a_1",
+                    "phrase_2a_2",
+                    "phrase_2a_3"
+                ]
+            },
+            {
+                "id": "frame_2b",
+                "type": "frame",
+                "template": "[NOUN] が必要です",
+                "description": "Expressing necessity",
+                "slot_definitions": {
+                    "NOUN": "What you need"
+                },
+                "example_phrase_ids": [
+                    "phrase_2b_1",
+                    "phrase_2b_2",
+                    "phrase_2b_ex3"
+                ]
+            },
+            {
+                "id": "frame_2c",
+                "type": "frame",
+                "template": "[NOUN] はいくらですか？",
+                "description": "Asking for price",
+                "slot_definitions": {
+                    "NOUN": "Item"
+                },
+                "example_phrase_ids": [
+                    "phrase_2c_1",
+                    "phrase_2c_2",
+                    "phrase_2c_ex3"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_2a_1",
+                "type": "phrase",
+                "text": "ビールが欲しいです。",
+                "translation": "I want a beer.",
+                "pronunciation": "Bii-ru ga ho-shii de-su",
+                "audio_text": "ビールが欲しいです",
+                "frame_id": "frame_2a",
+                "word_ids": [
+                    "word_pivo",
+                    "word_hoshii"
+                ]
+            },
+            {
+                "id": "phrase_2a_3",
+                "type": "phrase",
+                "text": "水が欲しいです。",
+                "translation": "I want water.",
+                "pronunciation": "Mi-zu ga ho-shii de-su",
+                "audio_text": "水が欲しいです",
+                "frame_id": "frame_2a",
+                "word_ids": [
+                    "word_voda",
+                    "word_hoshii"
+                ]
+            },
+            {
+                "id": "phrase_2a_4",
+                "type": "phrase",
+                "text": "チケットが欲しいです。",
+                "translation": "I want a ticket.",
+                "pronunciation": "Chi-ket-to ga ho-shii de-su",
+                "audio_text": "チケットが欲しいです",
+                "frame_id": "frame_2a",
+                "word_ids": [
+                    "word_listek",
+                    "word_hoshii"
+                ]
+            },
+            {
+                "id": "phrase_2b_1",
+                "type": "phrase",
+                "text": "助けが必要です。",
+                "translation": "I need help.",
+                "pronunciation": "Ta-su-ke ga hi-tsu-you de-su",
+                "audio_text": "助けが必要です",
+                "frame_id": "frame_2b",
+                "word_ids": [
+                    "word_pomoc",
+                    "word_hitsuyou"
+                ]
+            },
+            {
+                "id": "phrase_2b_2",
+                "type": "phrase",
+                "text": "チケットが必要です。",
+                "translation": "I need a ticket.",
+                "pronunciation": "Chi-ket-to ga hi-tsu-you de-su",
+                "audio_text": "チケットが必要です",
+                "frame_id": "frame_2b",
+                "word_ids": [
+                    "word_listek",
+                    "word_hitsuyou"
+                ]
+            },
+            {
+                "id": "phrase_2b_ex3",
+                "type": "phrase",
+                "text": "水が必要です。",
+                "translation": "I need water.",
+                "pronunciation": "Mi-zu ga hi-tsu-you de-su",
+                "audio_text": "水が必要です",
+                "frame_id": "frame_2b",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_voda",
+                    "word_hitsuyou"
+                ]
+            },
+            {
+                "id": "phrase_2c_1",
+                "type": "phrase",
+                "text": "ビールはいくらですか？",
+                "translation": "How much does the beer cost?",
+                "pronunciation": "Bii-ru wa i-ku-ra de-su ka?",
+                "audio_text": "ビールはいくらですか？",
+                "frame_id": "frame_2c",
+                "word_ids": [
+                    "word_pivo",
+                    "word_ikura"
+                ]
+            },
+            {
+                "id": "phrase_2c_2",
+                "type": "phrase",
+                "text": "チケットはいくらですか？",
+                "translation": "How much does a ticket cost?",
+                "pronunciation": "Chi-ket-to wa i-ku-ra de-su ka?",
+                "audio_text": "チケットはいくらですか？",
+                "frame_id": "frame_2c",
+                "word_ids": [
+                    "word_listek",
+                    "word_ikura"
+                ]
+            },
+            {
+                "id": "phrase_2c_ex3",
+                "type": "phrase",
+                "text": "水はいくらですか？",
+                "translation": "How much does water cost?",
+                "pronunciation": "Mi-zu wa i-ku-ra de-su ka?",
+                "audio_text": "水はいくらですか？",
+                "frame_id": "frame_2c",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_voda",
+                    "word_ikura"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_hoshii",
+                "lemma": "欲しい",
+                "translation": "want",
+                "pronunciation": "Ho-shii"
+            },
+            {
+                "id": "word_pivo",
+                "lemma": "ビール",
+                "translation": "beer",
+                "pronunciation": "Bii-ru"
+            },
+            {
+                "id": "word_hitsuyou",
+                "lemma": "必要",
+                "translation": "need",
+                "pronunciation": "Hi-tsu-you"
+            },
+            {
+                "id": "word_pomoc",
+                "lemma": "助け",
+                "translation": "help",
+                "pronunciation": "Ta-su-ke"
+            },
+            {
+                "id": "word_listek",
+                "lemma": "チケット",
+                "translation": "ticket",
+                "pronunciation": "Chi-ket-to"
+            },
+            {
+                "id": "word_ikura",
+                "lemma": "いくら",
+                "translation": "how much",
+                "pronunciation": "I-ku-ra"
+            },
+            {
+                "id": "word_voda",
+                "lemma": "水",
+                "translation": "water",
+                "pronunciation": "Mi-zu"
+            }
+        ]
+    },
+    "level_3": {
+        "id": "level_3",
+        "title": "Daily Actions",
+        "goal": "Describe your routine, yesterday, and future plans.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_3a",
+                "type": "frame",
+                "template": "今日は [VERB]",
+                "description": "Describing today / routine",
+                "slot_definitions": {
+                    "VERB": "Present tense action"
+                },
+                "example_phrase_ids": [
+                    "phrase_3a_1",
+                    "phrase_3a_2",
+                    "phrase_3a_ex3"
+                ]
+            },
+            {
+                "id": "frame_3b",
+                "type": "frame",
+                "template": "昨日は [PAST_VERB]",
+                "description": "Describing the past",
+                "slot_definitions": {
+                    "PAST_VERB": "Past tense verb"
+                },
+                "example_phrase_ids": [
+                    "phrase_3b_1",
+                    "phrase_3b_2",
+                    "phrase_3b_ex3"
+                ]
+            },
+            {
+                "id": "frame_3c",
+                "type": "frame",
+                "template": "明日は [VERB]",
+                "description": "Future intent",
+                "slot_definitions": {
+                    "VERB": "Non-past verb"
+                },
+                "example_phrase_ids": [
+                    "phrase_3c_1",
+                    "phrase_3c_2",
+                    "phrase_3c_ex3"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_3a_1",
+                "type": "phrase",
+                "text": "今日は働きます。",
+                "translation": "Today I am working.",
+                "audio_text": "今日は働きます",
+                "pronunciation": "Kyou wa ha-ta-ra-ki-ma-su",
+                "frame_id": "frame_3a",
+                "word_ids": [
+                    "word_dnes",
+                    "word_pracuji"
+                ]
+            },
+            {
+                "id": "phrase_3a_2",
+                "type": "phrase",
+                "text": "今日は勉強します。",
+                "translation": "Today I am studying.",
+                "audio_text": "今日は勉強します",
+                "pronunciation": "Kyou wa ben-kyou-shi-ma-su",
+                "frame_id": "frame_3a",
+                "word_ids": [
+                    "word_dnes",
+                    "word_studuji"
+                ]
+            },
+            {
+                "id": "phrase_3a_ex3",
+                "type": "phrase",
+                "text": "今日は旅行します。",
+                "translation": "Today I am traveling.",
+                "audio_text": "今日は旅行します",
+                "pronunciation": "Kyou wa ryo-kou-shi-ma-su",
+                "frame_id": "frame_3a",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_dnes",
+                    "word_cestovat"
+                ]
+            },
+            {
+                "id": "phrase_3b_1",
+                "type": "phrase",
+                "text": "昨日は働きました。",
+                "translation": "Yesterday I worked.",
+                "audio_text": "昨日は働きました",
+                "pronunciation": "Ki-nou wa ha-ta-ra-ki-ma-shi-ta",
+                "frame_id": "frame_3b",
+                "word_ids": [
+                    "word_vcera",
+                    "word_pracoval"
+                ]
+            },
+            {
+                "id": "phrase_3b_2",
+                "type": "phrase",
+                "text": "昨日は寝ました。",
+                "translation": "Yesterday I slept.",
+                "audio_text": "昨日は寝ました",
+                "pronunciation": "Ki-nou wa ne-ma-shi-ta",
+                "frame_id": "frame_3b",
+                "word_ids": [
+                    "word_vcera",
+                    "word_spal"
+                ]
+            },
+            {
+                "id": "phrase_3b_ex3",
+                "type": "phrase",
+                "text": "昨日は旅行しました。",
+                "translation": "Yesterday I traveled.",
+                "audio_text": "昨日は旅行しました",
+                "pronunciation": "Ki-nou wa ryo-kou-shi-ma-shi-ta",
+                "frame_id": "frame_3b",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_vcera",
+                    "word_cestoval"
+                ]
+            },
+            {
+                "id": "phrase_3c_1",
+                "type": "phrase",
+                "text": "明日は働きます。",
+                "translation": "Tomorrow I will work.",
+                "audio_text": "明日は働きます",
+                "pronunciation": "A-shi-ta wa ha-ta-ra-ki-ma-su",
+                "frame_id": "frame_3c",
+                "word_ids": [
+                    "word_zitra",
+                    "word_pracuji"
+                ]
+            },
+            {
+                "id": "phrase_3c_2",
+                "type": "phrase",
+                "text": "明日は旅行します。",
+                "translation": "Tomorrow I will travel.",
+                "audio_text": "明日は旅行します",
+                "pronunciation": "A-shi-ta wa ryo-kou-shi-ma-su",
+                "frame_id": "frame_3c",
+                "word_ids": [
+                    "word_zitra",
+                    "word_cestovat"
+                ]
+            },
+            {
+                "id": "phrase_3c_ex3",
+                "type": "phrase",
+                "text": "明日は寝ます。",
+                "translation": "Tomorrow I will sleep.",
+                "audio_text": "明日は寝ます",
+                "pronunciation": "A-shi-ta wa ne-ma-su",
+                "frame_id": "frame_3c",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_zitra",
+                    "word_spat"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_dnes",
+                "lemma": "今日",
+                "translation": "today",
+                "pronunciation": "Kyou"
+            },
+            {
+                "id": "word_pracuji",
+                "lemma": "働きます",
+                "translation": "work",
+                "pronunciation": "Ha-ta-ra-ki-ma-su"
+            },
+            {
+                "id": "word_studuji",
+                "lemma": "勉強します",
+                "translation": "study",
+                "pronunciation": "Ben-kyou-shi-ma-su"
+            },
+            {
+                "id": "word_vcera",
+                "lemma": "昨日",
+                "translation": "yesterday",
+                "pronunciation": "Ki-nou"
+            },
+            {
+                "id": "word_pracoval",
+                "lemma": "働きました",
+                "translation": "worked",
+                "pronunciation": "Ha-ta-ra-ki-ma-shi-ta"
+            },
+            {
+                "id": "word_spal",
+                "lemma": "寝ました",
+                "translation": "slept",
+                "pronunciation": "Ne-ma-shi-ta"
+            },
+            {
+                "id": "word_cestoval",
+                "lemma": "旅行しました",
+                "translation": "traveled",
+                "pronunciation": "Ryo-kou-shi-ma-shi-ta"
+            },
+            {
+                "id": "word_zitra",
+                "lemma": "明日",
+                "translation": "tomorrow",
+                "pronunciation": "A-shi-ta"
+            },
+            {
+                "id": "word_cestovat",
+                "lemma": "旅行します",
+                "translation": "travel",
+                "pronunciation": "Ryo-kou-shi-ma-su"
+            },
+            {
+                "id": "word_spat",
+                "lemma": "寝ます",
+                "translation": "sleep",
+                "pronunciation": "Ne-ma-su"
+            }
+        ]
+    },
+    "level_4": {
+        "id": "level_4",
+        "title": "Opinions & Situations",
+        "goal": "Explain problems, give opinions, and narrate simple events.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_4a",
+                "type": "frame",
+                "template": "[CLAUSE] と思います",
+                "description": "Expressing opinion",
+                "slot_definitions": {
+                    "CLAUSE": "Phrase"
+                },
+                "example_phrase_ids": [
+                    "phrase_4a_1",
+                    "phrase_4a_2",
+                    "phrase_4a_ex3"
+                ]
+            },
+            {
+                "id": "frame_4b",
+                "type": "frame",
+                "template": "[VERB] 必要があります",
+                "description": "Obligation / Necessity",
+                "slot_definitions": {
+                    "VERB": "Action"
+                },
+                "example_phrase_ids": [
+                    "phrase_4b_1",
+                    "phrase_4b_2"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_4a_1",
+                "type": "phrase",
+                "text": "それはいいと思います。",
+                "translation": "I think that it is good.",
+                "audio_text": "それはいいと思います",
+                "pronunciation": "So-re wa i-i to o-mo-i-ma-su",
+                "frame_id": "frame_4a",
+                "word_ids": [
+                    "word_sore_wa_ii",
+                    "word_to_omoimasu"
+                ]
+            },
+            {
+                "id": "phrase_4a_2",
+                "type": "phrase",
+                "text": "それは本当ではないと思います。",
+                "translation": "I think that it is not true.",
+                "audio_text": "それは本当ではないと思います",
+                "pronunciation": "So-re wa hon-tou de-wa na-i to o-mo-i-ma-su",
+                "frame_id": "frame_4a",
+                "word_ids": [
+                    "word_sore_wa_hontou_dewa_nai",
+                    "word_to_omoimasu"
+                ]
+            },
+            {
+                "id": "phrase_4a_ex3",
+                "type": "phrase",
+                "text": "それは問題だと思います。",
+                "translation": "I think that is a problem.",
+                "audio_text": "それは問題だと思います",
+                "pronunciation": "So-re wa mon-dai da to o-mo-i-ma-su",
+                "frame_id": "frame_4a",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_sore_wa_mondai",
+                    "word_to_omoimasu"
+                ]
+            },
+            {
+                "id": "phrase_4b_2",
+                "type": "phrase",
+                "text": "働く必要があります。",
+                "translation": "I must work.",
+                "audio_text": "働く必要があります",
+                "pronunciation": "Ha-ta-ra-ku hi-tsu-you ga a-ri-ma-su",
+                "frame_id": "frame_4b",
+                "word_ids": [
+                    "word_hataraku",
+                    "word_hitsuyou_ga_arimasu"
+                ]
+            },
+            {
+                "id": "phrase_4b_1",
+                "type": "phrase",
+                "text": "家に帰る必要があります。",
+                "translation": "I must go home.",
+                "audio_text": "家に帰る必要があります",
+                "pronunciation": "I-e ni ka-e-ru hi-tsu-you ga a-ri-ma-su",
+                "frame_id": "frame_4b",
+                "word_ids": [
+                    "word_ie_ni_kaeru",
+                    "word_hitsuyou_ga_arimasu"
+                ]
+            },
+            {
+                "id": "phrase_4b_ex3",
+                "type": "phrase",
+                "text": "寝る必要があります。",
+                "translation": "I must sleep.",
+                "audio_text": "寝る必要があります",
+                "pronunciation": "Ne-ru hi-tsu-you ga a-ri-ma-su",
+                "frame_id": "frame_4b",
+                "tags": [
+                    "example"
+                ],
+                "word_ids": [
+                    "word_neru",
+                    "word_hitsuyou_ga_arimasu"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_to_omoimasu",
+                "lemma": "思います",
+                "translation": "think",
+                "pronunciation": "O-mo-i-ma-su"
+            },
+            {
+                "id": "word_sore_wa_ii",
+                "lemma": "それはいい",
+                "translation": "it is good",
+                "pronunciation": "So-re wa i-i"
+            },
+            {
+                "id": "word_sore_wa_hontou_dewa_nai",
+                "lemma": "それは本当ではない",
+                "translation": "it is not true",
+                "pronunciation": "So-re wa hon-tou de-wa na-i"
+            },
+            {
+                "id": "word_sore_wa_mondai",
+                "lemma": "それは問題",
+                "translation": "it is a problem",
+                "pronunciation": "So-re wa mon-dai"
+            },
+            {
+                "id": "word_hitsuyou_ga_arimasu",
+                "lemma": "必要があります",
+                "translation": "need to/must",
+                "pronunciation": "Hi-tsu-you ga a-ri-ma-su"
+            },
+            {
+                "id": "word_hataraku",
+                "lemma": "働く",
+                "translation": "work",
+                "pronunciation": "Ha-ta-ra-ku"
+            },
+            {
+                "id": "word_ie_ni_kaeru",
+                "lemma": "家に帰る",
+                "translation": "go home",
+                "pronunciation": "I-e ni ka-e-ru"
+            },
+            {
+                "id": "word_neru",
+                "lemma": "寝る",
+                "translation": "sleep",
+                "pronunciation": "Ne-ru"
+            }
+        ]
+    },
+    "level_5": {
+        "id": "level_5",
+        "title": "Experiences & Reasons",
+        "goal": "Talk about experiences, explain reasons, and connect ideas.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_5a",
+                "type": "frame",
+                "template": "[CLAUSE] から",
+                "description": "Explaining reason",
+                "slot_definitions": {
+                    "CLAUSE": "Reason"
+                },
+                "example_phrase_ids": [
+                    "phrase_5a_1",
+                    "phrase_5a_2"
+                ]
+            },
+            {
+                "id": "frame_5b",
+                "type": "frame",
+                "template": "[NOUN] が好きです",
+                "description": "Expressing Likes",
+                "slot_definitions": {
+                    "NOUN": "Object"
+                },
+                "example_phrase_ids": [
+                    "phrase_5b_1",
+                    "phrase_5b_2"
+                ]
+            },
+            {
+                "id": "frame_5c",
+                "type": "frame",
+                "template": "[CLAUSE A] 時、[CLAUSE B]",
+                "description": "Conditionals (When...)",
+                "slot_definitions": {
+                    "CLAUSE A": "Condition"
+                },
+                "example_phrase_ids": [
+                    "phrase_5c_1",
+                    "phrase_5c_2"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_5a_1",
+                "type": "phrase",
+                "text": "働いていますから。",
+                "translation": "Because I work.",
+                "audio_text": "働いていますから",
+                "pronunciation": "Ha-ta-ra-i-te-i-ru ka-ra",
+                "frame_id": "frame_5a",
+                "word_ids": [
+                    "word_hataraiteiru",
+                    "word_kara"
+                ]
+            },
+            {
+                "id": "phrase_5a_2",
+                "type": "phrase",
+                "text": "時間がありませんから。",
+                "translation": "Because I don't have time.",
+                "audio_text": "時間がありませんから",
+                "pronunciation": "Ji-kan ga a-ri-ma-sen ka-ra",
+                "frame_id": "frame_5a",
+                "word_ids": [
+                    "word_jikan_ga_arimasen",
+                    "word_kara"
+                ]
+            },
+            {
+                "id": "phrase_5b_1",
+                "type": "phrase",
+                "text": "コーヒーが好きです。",
+                "translation": "I like coffee.",
+                "audio_text": "コーヒーが好きです",
+                "pronunciation": "Koo-hii ga su-ki de-su",
+                "frame_id": "frame_5b",
+                "word_ids": [
+                    "word_kava",
+                    "word_suki_desu"
+                ]
+            },
+            {
+                "id": "phrase_5b_2",
+                "type": "phrase",
+                "text": "冬が好きではありません。",
+                "translation": "I don't like winter.",
+                "audio_text": "冬が好きではありません",
+                "pronunciation": "Fu-yu ga su-ki de-wa a-ri-ma-sen",
+                "frame_id": "frame_5b",
+                "word_ids": [
+                    "word_fuyu",
+                    "word_suki_dewa_arimasen"
+                ]
+            },
+            {
+                "id": "phrase_5c_1",
+                "type": "phrase",
+                "text": "時間がある時、寝ます。",
+                "translation": "When I have time, I sleep.",
+                "audio_text": "時間がある時、寝ます",
+                "pronunciation": "Ji-kan ga a-ru to-ki ne-ma-su",
+                "frame_id": "frame_5c",
+                "word_ids": [
+                    "word_jikan_ga_aru",
+                    "word_toki",
+                    "word_nemasu"
+                ]
+            },
+            {
+                "id": "phrase_5c_2",
+                "type": "phrase",
+                "text": "働く時、来られません。",
+                "translation": "When I work, I can't come.",
+                "audio_text": "働く時、来られません",
+                "pronunciation": "Ha-ta-ra-ku to-ki ko-ra-re-ma-sen",
+                "frame_id": "frame_5c",
+                "word_ids": [
+                    "word_hataraku",
+                    "word_toki",
+                    "word_koraremasen"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_kara",
+                "lemma": "から",
+                "translation": "because",
+                "pronunciation": "Ka-ra"
+            },
+            {
+                "id": "word_suki_desu",
+                "lemma": "好きです",
+                "translation": "like",
+                "pronunciation": "Su-ki de-su"
+            },
+            {
+                "id": "word_suki_dewa_arimasen",
+                "lemma": "好きではありません",
+                "translation": "don't like",
+                "pronunciation": "Su-ki de-wa a-ri-ma-sen"
+            },
+            {
+                "id": "word_fuyu",
+                "lemma": "冬",
+                "translation": "winter",
+                "pronunciation": "Fu-yu"
+            },
+            {
+                "id": "word_toki",
+                "lemma": "時",
+                "translation": "when/time",
+                "pronunciation": "To-ki"
+            },
+            {
+                "id": "word_jikan_ga_aru",
+                "lemma": "時間がある",
+                "translation": "have time",
+                "pronunciation": "Ji-kan ga a-ru"
+            },
+            {
+                "id": "word_jikan_ga_arimasen",
+                "lemma": "時間がありません",
+                "translation": "don't have time",
+                "pronunciation": "Ji-kan ga a-ri-ma-sen"
+            },
+            {
+                "id": "word_nemasu",
+                "lemma": "寝ます",
+                "translation": "sleep",
+                "pronunciation": "Ne-ma-su"
+            },
+            {
+                "id": "word_hataraiteiru",
+                "lemma": "働いています",
+                "translation": "working",
+                "pronunciation": "Ha-ta-ra-i-te-i-ru"
+            },
+            {
+                "id": "word_koraremasen",
+                "lemma": "来られません",
+                "translation": "cannot come",
+                "pronunciation": "Ko-ra-re-ma-sen"
+            }
+        ]
+    },
+    "level_6": {
+        "id": "level_6",
+        "title": "Plans & Possibilities",
+        "goal": "Discuss plans, possibilities, and constraints.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_6a",
+                "type": "frame",
+                "template": "[VERB] 予定です",
+                "description": "Planning",
+                "slot_definitions": {
+                    "VERB": "Action"
+                },
+                "example_phrase_ids": [
+                    "phrase_6a_1"
+                ]
+            },
+            {
+                "id": "frame_6b",
+                "type": "frame",
+                "template": "[VERB] ことができます",
+                "description": "Possibility",
+                "slot_definitions": {
+                    "VERB": "Action"
+                },
+                "example_phrase_ids": [
+                    "phrase_6b_1",
+                    "phrase_6b_2"
+                ]
+            },
+            {
+                "id": "frame_6c",
+                "type": "frame",
+                "template": "多分 [CLAUSE]",
+                "description": "Uncertainty",
+                "slot_definitions": {
+                    "CLAUSE": "Statement"
+                },
+                "example_phrase_ids": [
+                    "phrase_6c_1",
+                    "phrase_6c_2"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_6a_1",
+                "type": "phrase",
+                "text": "明日働く予定です。",
+                "translation": "I plan to work tomorrow.",
+                "audio_text": "明日働く予定です",
+                "pronunciation": "A-shi-ta ha-ta-ra-ku yo-tei de-su",
+                "frame_id": "frame_6a",
+                "word_ids": [
+                    "word_zitra",
+                    "word_hataraku",
+                    "word_yotei_desu"
+                ]
+            },
+            {
+                "id": "phrase_6b_1",
+                "type": "phrase",
+                "text": "夕方来ることができます。",
+                "translation": "I can come in the evening.",
+                "audio_text": "夕方来ることができます",
+                "pronunciation": "Yuu-ga-ta ku-ru ko-to ga de-ki-ma-su",
+                "frame_id": "frame_6b",
+                "word_ids": [
+                    "word_yuugata",
+                    "word_kuru_koto_ga_dekimasu"
+                ]
+            },
+            {
+                "id": "phrase_6b_2",
+                "type": "phrase",
+                "text": "今日来ることができません。",
+                "translation": "I can't come today.",
+                "audio_text": "今日来ることができません",
+                "pronunciation": "Kyou ku-ru ko-to ga de-ki-ma-sen",
+                "frame_id": "frame_6b",
+                "word_ids": [
+                    "word_dnes",
+                    "word_kuru_koto_ga_dekimasen"
+                ]
+            },
+            {
+                "id": "phrase_6c_1",
+                "type": "phrase",
+                "text": "多分働きます。",
+                "translation": "Maybe I will work.",
+                "audio_text": "多分働きます",
+                "pronunciation": "Ta-bun ha-ta-ra-ki-ma-su",
+                "frame_id": "frame_6c",
+                "word_ids": [
+                    "word_tabun",
+                    "word_hatarakimasu"
+                ]
+            },
+            {
+                "id": "phrase_6c_2",
+                "type": "phrase",
+                "text": "多分時間がありません。",
+                "translation": "Maybe I don't have time.",
+                "audio_text": "多分時間がありません",
+                "pronunciation": "Ta-bun ji-kan ga a-ri-ma-sen",
+                "frame_id": "frame_6c",
+                "word_ids": [
+                    "word_tabun",
+                    "word_jikan_ga_arimasen"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_yotei_desu",
+                "lemma": "予定です",
+                "translation": "plan to",
+                "pronunciation": "Yo-tei de-su"
+            },
+            {
+                "id": "word_kuru_koto_ga_dekimasu",
+                "lemma": "来ることができます",
+                "translation": "can come",
+                "pronunciation": "Ku-ru ko-to ga de-ki-ma-su"
+            },
+            {
+                "id": "word_kuru_koto_ga_dekimasen",
+                "lemma": "来ることができません",
+                "translation": "cannot come",
+                "pronunciation": "Ku-ru ko-to ga de-ki-ma-sen"
+            },
+            {
+                "id": "word_yuugata",
+                "lemma": "夕方",
+                "translation": "evening",
+                "pronunciation": "Yuu-ga-ta"
+            },
+            {
+                "id": "word_tabun",
+                "lemma": "多分",
+                "translation": "maybe",
+                "pronunciation": "Ta-bun"
+            },
+            {
+                "id": "word_hatarakimasu",
+                "lemma": "働きます",
+                "translation": "work",
+                "pronunciation": "Ha-ta-ra-ki-ma-su"
+            }
+        ]
+    },
+    "level_7": {
+        "id": "level_7",
+        "title": "Narrating Stories",
+        "goal": "Tell short, coherent stories about past events.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_7a",
+                "type": "frame",
+                "template": "まず..., 次に..., 最後に...",
+                "description": "Sequencing events",
+                "slot_definitions": {
+                    "...": "Events"
+                },
+                "example_phrase_ids": [
+                    "phrase_7a_1",
+                    "phrase_7a_2",
+                    "phrase_7a_3"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_7a_1",
+                "type": "phrase",
+                "text": "まず働きました。",
+                "translation": "First I worked.",
+                "audio_text": "まず働きました",
+                "pronunciation": "Ma-zu ha-ta-ra-ki-ma-shi-ta",
+                "frame_id": "frame_7a",
+                "word_ids": [
+                    "word_mazu",
+                    "word_hatarakimashita"
+                ]
+            },
+            {
+                "id": "phrase_7a_2",
+                "type": "phrase",
+                "text": "次に家に帰りました。",
+                "translation": "Then I went home.",
+                "audio_text": "次に家に帰りました",
+                "pronunciation": "Tsu-gi-ni i-e ni ka-e-ri-ma-shi-ta",
+                "frame_id": "frame_7a",
+                "word_ids": [
+                    "word_tsugini",
+                    "word_ie_ni_kaerimashita"
+                ]
+            },
+            {
+                "id": "phrase_7a_3",
+                "type": "phrase",
+                "text": "最後に寝ました。",
+                "translation": "Finally I slept.",
+                "audio_text": "最後に寝ました",
+                "pronunciation": "Sai-go ni ne-ma-shi-ta",
+                "frame_id": "frame_7a",
+                "word_ids": [
+                    "word_saigo_ni",
+                    "word_nemashita"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_mazu",
+                "lemma": "まず",
+                "translation": "first",
+                "pronunciation": "Ma-zu"
+            },
+            {
+                "id": "word_tsugini",
+                "lemma": "次に",
+                "translation": "then",
+                "pronunciation": "Tsu-gi-ni"
+            },
+            {
+                "id": "word_ie_ni_kaerimashita",
+                "lemma": "家に帰りました",
+                "translation": "went home",
+                "pronunciation": "I-e ni ka-e-ri-ma-shi-ta"
+            },
+            {
+                "id": "word_saigo_ni",
+                "lemma": "最後に",
+                "translation": "finally",
+                "pronunciation": "Sai-go ni"
+            },
+            {
+                "id": "word_hatarakimashita",
+                "lemma": "働きました",
+                "translation": "worked",
+                "pronunciation": "Ha-ta-ra-ki-ma-shi-ta"
+            },
+            {
+                "id": "word_nemashita",
+                "lemma": "寝ました",
+                "translation": "slept",
+                "pronunciation": "Ne-ma-shi-ta"
+            }
+        ]
+    },
+    "level_8": {
+        "id": "level_8",
+        "title": "Problems & Solutions",
+        "goal": "Explain problems, causes, and possible solutions.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_8a",
+                "type": "frame",
+                "template": "[NOUN] に問題があります",
+                "description": "Stating probelm",
+                "slot_definitions": {
+                    "NOUN": "Issue"
+                },
+                "example_phrase_ids": [
+                    "phrase_8a_1"
+                ]
+            },
+            {
+                "id": "frame_8b",
+                "type": "frame",
+                "template": "ですから [VERB] 必要があります",
+                "description": "Consequence",
+                "slot_definitions": {
+                    "VERB": "Action"
+                },
+                "example_phrase_ids": [
+                    "phrase_8b_1"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_8a_1",
+                "type": "phrase",
+                "text": "仕事に問題があります。",
+                "translation": "I have a problem with work.",
+                "audio_text": "仕事に問題があります",
+                "pronunciation": "Shi-go-to ni mon-dai ga a-ri-ma-su",
+                "frame_id": "frame_8a",
+                "word_ids": [
+                    "word_shigoto",
+                    "word_ni_mondai_ga_arimasu"
+                ]
+            },
+            {
+                "id": "phrase_8b_1",
+                "type": "phrase",
+                "text": "ですから家で働く必要があります。",
+                "translation": "Therefore I must work at home.",
+                "audio_text": "ですから家で働く必要があります",
+                "pronunciation": "De-su-ka-ra i-e de ha-ta-ra-ku hi-tsu-you ga a-ri-ma-su",
+                "frame_id": "frame_8b",
+                "word_ids": [
+                    "word_desukara",
+                    "word_ie_de_hataraku",
+                    "word_hitsuyou_ga_arimasu"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_ni_mondai_ga_arimasu",
+                "lemma": "に問題があります",
+                "translation": "have a problem with",
+                "pronunciation": "Ni mon-dai ga a-ri-ma-su"
+            },
+            {
+                "id": "word_shigoto",
+                "lemma": "仕事",
+                "translation": "work",
+                "pronunciation": "Shi-go-to"
+            },
+            {
+                "id": "word_desukara",
+                "lemma": "ですから",
+                "translation": "therefore",
+                "pronunciation": "De-su-ka-ra"
+            },
+            {
+                "id": "word_ie_de_hataraku",
+                "lemma": "家で働く",
+                "translation": "work at home",
+                "pronunciation": "I-e de ha-ta-ra-ku"
+            }
+        ]
+    },
+    "level_9": {
+        "id": "level_9",
+        "title": "Opinions & Reactions",
+        "goal": "Express opinions, agreement, disagreement, and uncertainty.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_9a",
+                "type": "frame",
+                "template": "私の意見では [CLAUSE]",
+                "description": "Opinion",
+                "slot_definitions": {
+                    "CLAUSE": "Opinion"
+                },
+                "example_phrase_ids": [
+                    "phrase_9a_1"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_9a_1",
+                "type": "phrase",
+                "text": "私の意見では、それはいいです。",
+                "translation": "In my opinion, it's good.",
+                "audio_text": "私の意見では、それはいいです",
+                "pronunciation": "Wa-ta-shi no i-ken de-wa so-re wa i-i de-su",
+                "frame_id": "frame_9a",
+                "word_ids": [
+                    "word_watashi_no_iken_dewa",
+                    "word_sore_wa_ii_desu"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_watashi_no_iken_dewa",
+                "lemma": "私の意見では",
+                "translation": "in my opinion",
+                "pronunciation": "Wa-ta-shi no i-ken de-wa"
+            },
+            {
+                "id": "word_sore_wa_ii_desu",
+                "lemma": "それはいいです",
+                "translation": "it is good",
+                "pronunciation": "So-re wa i-i de-su"
+            }
+        ]
+    },
+    "level_10": {
+        "id": "level_10",
+        "title": "Conversations & Nuance",
+        "goal": "Control conversations, clarify meaning, and soften statements.",
+        "unlock_criteria": {
+            "phrases_mastered_pct": 0.7,
+            "frames_usable_pct": 0.8
+        },
+        "frames": [
+            {
+                "id": "frame_10a",
+                "type": "frame",
+                "template": "それは [CLAUSE] という意味です",
+                "description": "Clarification",
+                "slot_definitions": {
+                    "CLAUSE": "Explanation"
+                },
+                "example_phrase_ids": [
+                    "phrase_10a_1"
+                ]
+            }
+        ],
+        "phrases": [
+            {
+                "id": "phrase_10a_1",
+                "type": "phrase",
+                "text": "それは時間がありませんという意味です。",
+                "translation": "That means that I don't have time.",
+                "audio_text": "それは時間がありませんという意味です",
+                "pronunciation": "So-re wa ji-kan ga a-ri-ma-sen to i-u i-mi de-su",
+                "frame_id": "frame_10a",
+                "word_ids": [
+                    "word_sore_wa",
+                    "word_jikan_ga_arimasen",
+                    "word_to_iu_imi_desu"
+                ]
+            }
+        ],
+        "words": [
+            {
+                "id": "word_sore_wa",
+                "lemma": "それは",
+                "translation": "that",
+                "pronunciation": "So-re wa"
+            },
+            {
+                "id": "word_to_iu_imi_desu",
+                "lemma": "という意味です",
+                "translation": "means",
+                "pronunciation": "To i-u i-mi de-su"
+            }
+        ]
+    }
+}

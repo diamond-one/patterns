@@ -1,0 +1,142 @@
+[
+    {
+        "id": "1",
+        "level": 1,
+        "turkish": "Merhaba",
+        "english": "Hello / Hi",
+        "pronunciation": "Mer-ha-ba"
+    },
+    {
+        "id": "2",
+        "level": 1,
+        "turkish": "Teşekkür ederim",
+        "english": "Thank you",
+        "pronunciation": "Te-shek-kur e-de-rim"
+    },
+    {
+        "id": "3",
+        "level": 1,
+        "turkish": "Lütfen",
+        "english": "Please",
+        "pronunciation": "Lutf-en"
+    },
+    {
+        "id": "4",
+        "level": 1,
+        "turkish": "Günaydın",
+        "english": "Good morning",
+        "pronunciation": "Gun-ay-din"
+    },
+    {
+        "id": "5",
+        "level": 1,
+        "turkish": "Evet",
+        "english": "Yes",
+        "pronunciation": "Ev-et"
+    },
+    {
+        "id": "6",
+        "level": 2,
+        "turkish": "Hayır",
+        "english": "No",
+        "pronunciation": "Ha-yir"
+    },
+    {
+        "id": "7",
+        "level": 2,
+        "turkish": "Güle güle",
+        "english": "Goodbye",
+        "pronunciation": "Gu-le Gu-le"
+    },
+    {
+        "id": "8",
+        "level": 2,
+        "turkish": "İyi geceler",
+        "english": "Good night",
+        "pronunciation": "Ee-yi ge-je-ler"
+    },
+    {
+        "id": "9",
+        "level": 2,
+        "turkish": "Nasılsın?",
+        "english": "How are you?",
+        "pronunciation": "Na-sil-sin"
+    },
+    {
+        "id": "10",
+        "level": 2,
+        "turkish": "İyiyim",
+        "english": "I am good",
+        "pronunciation": "Ee-yi-yim"
+    },
+    {
+        "id": "11",
+        "level": 3,
+        "turkish": "Bira",
+        "english": "Beer",
+        "pronunciation": "Bi-ra"
+    },
+    {
+        "id": "12",
+        "level": 3,
+        "turkish": "Su",
+        "english": "Water",
+        "pronunciation": "Su"
+    },
+    {
+        "id": "13",
+        "level": 3,
+        "turkish": "Kahve",
+        "english": "Coffee",
+        "pronunciation": "Kah-veh"
+    },
+    {
+        "id": "14",
+        "level": 3,
+        "turkish": "Hesap lütfen",
+        "english": "The bill, please",
+        "pronunciation": "He-sap lutf-en"
+    },
+    {
+        "id": "15",
+        "level": 3,
+        "turkish": "Bu ne kadar?",
+        "english": "How much does it cost?",
+        "pronunciation": "Bu ne ka-dar"
+    },
+    {
+        "id": "16",
+        "level": 4,
+        "turkish": "Anlamıyorum",
+        "english": "I don't understand",
+        "pronunciation": "An-la-mi-yo-rum"
+    },
+    {
+        "id": "17",
+        "level": 4,
+        "turkish": "İngilizce biliyor musunuz?",
+        "english": "Do you speak English?",
+        "pronunciation": "In-gi-liz-je bi-li-yor mu-su-nuz"
+    },
+    {
+        "id": "18",
+        "level": 4,
+        "turkish": "Pardon / Özür dilerim",
+        "english": "Excuse me / Sorry",
+        "pronunciation": "Par-don / O-zur di-le-rim"
+    },
+    {
+        "id": "19",
+        "level": 4,
+        "turkish": "Tuvalet nerede?",
+        "english": "Where is the toilet?",
+        "pronunciation": "Tu-va-let ne-re-de"
+    },
+    {
+        "id": "20",
+        "level": 4,
+        "turkish": "Benim adım...",
+        "english": "My name is...",
+        "pronunciation": "Be-nim a-dim..."
+    }
+]
