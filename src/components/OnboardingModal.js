@@ -1,25 +1,34 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function OnboardingModal() {
     const [isOpen, setIsOpen] = useState(false);
+    const { language } = useLanguage();
 
     useEffect(() => {
-        const hasVisited = localStorage.getItem('turkish-app-visited');
+        if (!language) return; // Don't show if no language selected (e.g. on landing page)
+
+        const storageKey = `patterns-visited-${language.id}`;
+        const hasVisited = localStorage.getItem(storageKey);
+
         if (!hasVisited) {
             setIsOpen(true);
         }
-    }, []);
+    }, [language]);
 
     const handleStart = () => {
+        if (!language) return;
         setIsOpen(false);
-        localStorage.setItem('turkish-app-visited', 'true');
+        const storageKey = `patterns-visited-${language.id}`;
+        localStorage.setItem(storageKey, 'true');
+
         // Play a welcome sound?
         import('../utils/SoundManager').then(m => m.default.playClick());
     };
 
-    if (!isOpen) return null;
+    if (!isOpen || !language) return null;
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-300">
@@ -28,9 +37,9 @@ export default function OnboardingModal() {
                     <img src="/icons/icon.png" alt="App Icon" className="w-full h-full object-contain" />
                 </div>
 
-                <h2 className="text-2xl font-bold text-gray-800 mb-2">Hoş geldiniz! (Welcome)</h2>
+                <h2 className="text-2xl font-bold text-gray-800 mb-2">{language.welcome_title} (Welcome)</h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                    This app is different.
+                    {language.welcome_intro}
                     <br /><br />
                     <strong>1. Speak Aloud:</strong> You must actually say the phrases.
                     <br />
